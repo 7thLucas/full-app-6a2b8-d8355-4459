@@ -1,0 +1,96 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">North Star</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">The one number that matters</h2>
+      <p class="text-sm text-slate-500 mt-1">Projected impact — based on your inputs</p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <!-- Left: Operation definition + formula -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <p class="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Verified Operation</p>
+          <h3 class="text-lg font-black text-slate-900">"Affordable Meal Found"</h3>
+          <p class="text-sm text-slate-600 mt-1 leading-snug">User opens the app, searches nearby, and views an affordable food listing — a real food decision made, not just a session.</p>
+          <div class="mt-3 flex gap-2 flex-wrap">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded-full">Not: page views</span>
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded-full">Not: logins</span>
+            <span class="bg-green-600 text-white text-xs font-semibold px-2 py-0.5 rounded-full">✓ Food listings opened</span>
+          </div>
+        </div>
+
+        <!-- Formula -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 flex-1">
+          <p class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-3">Weekly Formula</p>
+
+          <div class="space-y-2 text-sm text-slate-700">
+            <div class="flex justify-between items-center">
+              <span>Weekly active users</span>
+              <span class="bg-yellow-100 border border-yellow-300 text-yellow-800 text-xs font-bold px-2 py-0.5 rounded">Assumption — adjust this: 500</span>
+            </div>
+            <div class="text-slate-400 text-xs pl-2">×</div>
+            <div class="flex justify-between items-center">
+              <span>Searches per user / week</span>
+              <span class="bg-yellow-100 border border-yellow-300 text-yellow-800 text-xs font-bold px-2 py-0.5 rounded">Assumption — adjust this: 3</span>
+            </div>
+            <div class="border-t border-slate-200 pt-2 flex justify-between items-center font-bold text-slate-900">
+              <span>Weekly Verified Operations</span>
+              <span class="text-green-700 text-lg">1,500 / week</span>
+            </div>
+            <p class="text-xs text-slate-400 pt-1">500 users × 3 searches each = 1,500 verified operations / week</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Value derivation -->
+      <div class="flex flex-col gap-4">
+
+        <!-- Time value -->
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-5">
+          <p class="text-xs font-bold uppercase tracking-wide text-orange-700 mb-2">Value per Operation</p>
+          <div class="space-y-1 text-sm text-slate-700">
+            <div class="flex justify-between">
+              <span>Time saved per search</span>
+              <span class="font-semibold text-slate-900">20 min</span>
+            </div>
+            <div class="text-slate-400 text-xs pl-2">×</div>
+            <div class="flex justify-between">
+              <span>User's estimated hourly value</span>
+              <span class="bg-yellow-100 border border-yellow-300 text-yellow-800 text-xs font-bold px-2 py-0.5 rounded">Assumption: $5/hr</span>
+            </div>
+            <div class="border-t border-orange-200 pt-2 flex justify-between font-bold text-slate-900">
+              <span>Value per operation</span>
+              <span class="text-orange-600">~$1.67</span>
+            </div>
+            <p class="text-xs text-slate-400">20 min ÷ 60 × $5 = $1.67 per operation</p>
+          </div>
+        </div>
+
+        <!-- Weekly / Annual total -->
+        <div class="bg-slate-800 rounded-2xl p-5 flex-1 flex flex-col justify-between">
+          <p class="text-xs font-bold uppercase tracking-wide text-slate-300 mb-3">Projected Total Impact</p>
+          <div class="space-y-3">
+            <div class="flex justify-between items-end">
+              <span class="text-sm text-slate-300">Weekly value</span>
+              <span class="text-2xl font-black text-white">$2,505</span>
+            </div>
+            <div class="flex justify-between items-end border-t border-slate-600 pt-3">
+              <span class="text-sm text-slate-300">Annual value</span>
+              <span class="text-3xl font-black text-green-400">$130,260</span>
+            </div>
+            <p class="text-xs text-slate-400">1,500 ops/wk × $1.67 × 52 weeks</p>
+          </div>
+          <p class="text-xs text-slate-500 mt-3 border-t border-slate-700 pt-3">Projected impact — based on your inputs. Adjust assumption chips to match your real numbers.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
