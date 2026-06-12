@@ -1,0 +1,40 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 55%; }
+.mode-landscape .sl-right { width: 45%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-portrait .sl-right { width: 100%; min-height: 220px; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content -->
+    <div class="sl-left flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block text-xs font-bold tracking-widest uppercase text-green-700 bg-green-50 border border-green-200 px-3 py-1 rounded-full">Affordable Food Discovery</span>
+        <h1 class="text-5xl font-black text-slate-900 mt-5 leading-tight">Find great food.<br>Keep your budget.</h1>
+        <p class="text-base text-slate-600 mt-4 leading-relaxed max-w-xs">The food finder built for lower-to-mid income users — sorted by price, sorted by popularity, always nearby.</p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Price-first</span>
+          <span class="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Near you</span>
+          <span class="bg-slate-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Budget-built</span>
+        </div>
+      </div>
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: image -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=vibrant%20affordable%20street%20food%20market%2C%20warm%20golden%20lights%2C%20happy%20diverse%20people%20eating%20budget%20meals%2C%20cinematic%20editorial%20photography"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="Affordable food market"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
