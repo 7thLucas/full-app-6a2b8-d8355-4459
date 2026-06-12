@@ -1,0 +1,83 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+.mode-portrait .sl-layout { flex-direction: column; gap: 1rem; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">The Foundation</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Why this app exists</h2>
+    </div>
+
+    <!-- Two columns -->
+    <div class="sl-layout flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-col bg-orange-50 border border-orange-100 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">The Problem</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">Budget users waste 20+ minutes every meal search</h3>
+          <ul class="mt-4 space-y-3">
+            <li class="flex items-start gap-2 text-sm text-slate-700">
+              <span class="text-orange-500 font-bold mt-0.5">—</span>
+              Scattered across Google Maps, delivery apps, review sites
+            </li>
+            <li class="flex items-start gap-2 text-sm text-slate-700">
+              <span class="text-orange-500 font-bold mt-0.5">—</span>
+              No tool puts affordability first — it's always a filter, never an identity
+            </li>
+            <li class="flex items-start gap-2 text-sm text-slate-700">
+              <span class="text-orange-500 font-bold mt-0.5">—</span>
+              Students, workers, and families on tight budgets aren't the target — they're an afterthought
+            </li>
+          </ul>
+        </div>
+        <div class="mt-6">
+          <img
+            src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=frustrated%20person%20on%20phone%20searching%20for%20food%2C%20city%20street%2C%20overwhelmed%2C%20budget%20stress%2C%20candid%20editorial"
+            class="w-full h-28 object-cover rounded-xl"
+            alt="Problem illustration"
+          />
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col bg-green-50 border border-green-100 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full">The Solution</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">One app. Budget-first. Sorted two ways.</h3>
+          <ul class="mt-4 space-y-3">
+            <li class="flex items-start gap-2 text-sm text-slate-700">
+              <span class="text-green-600 font-bold mt-0.5">✓</span>
+              Open the app → see affordable food spots near your location instantly
+            </li>
+            <li class="flex items-start gap-2 text-sm text-slate-700">
+              <span class="text-green-600 font-bold mt-0.5">✓</span>
+              Sort by price (lowest first) or by popularity — your choice, your priority
+            </li>
+            <li class="flex items-start gap-2 text-sm text-slate-700">
+              <span class="text-green-600 font-bold mt-0.5">✓</span>
+              Built <em>for</em> lower-to-mid income users — not adapted for them
+            </li>
+          </ul>
+        </div>
+        <div class="mt-6">
+          <img
+            src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=happy%20person%20on%20phone%20finding%20affordable%20food%20nearby%2C%20bright%20city%20street%2C%20relief%2C%20warm%20editorial"
+            class="w-full h-28 object-cover rounded-xl"
+            alt="Solution illustration"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
